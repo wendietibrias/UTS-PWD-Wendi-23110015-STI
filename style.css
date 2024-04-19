@@ -2,6 +2,7 @@
 
 .main--container {
     transition:all 0.4s ease-in;
+    overflow-x:hidden;
 }
 
 .dark .main--container {
