@@ -155,6 +155,7 @@
 
     .navbar--container-content{
         max-width:100%;
+        width:100%;
     }
 
     .navbar--links {
