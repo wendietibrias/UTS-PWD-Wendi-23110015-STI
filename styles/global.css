@@ -153,6 +153,10 @@
         font-size:1.3rem;
     }
 
+    .navbar--container-content{
+        max-width:100%;
+    }
+
     .navbar--links {
         position:fixed;
         left:-100%;
