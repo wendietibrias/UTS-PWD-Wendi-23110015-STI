@@ -2,7 +2,6 @@
 
 .main--container {
     transition:all 0.4s ease-in;
-    overflow-x:hidden;
 }
 
 .dark .main--container {
@@ -18,7 +17,6 @@
     align-items: center;
     justify-content: center;
     position:relative;
-    overflow-y:hidden;
 }
 
 .hero--container-content {

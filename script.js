@@ -23,8 +23,8 @@ scrollRevealHandler('.about--left' , {...scrollRevealConfig,delay:0,origin:'left
 
 scrollRevealHandler('.about--right' , {...scrollRevealConfig,delay:1200,origin:'right'});
 
-scrollRevealHandler('.services--container',{...scrollRevealConfig, origin:'top'});
+scrollRevealHandler('.services--container',{...scrollRevealConfig, origin:'left'});
 
-scrollRevealHandler('.skills--container',{...scrollRevealConfig, origin:'top'});
+scrollRevealHandler('.skills--container',{...scrollRevealConfig, origin:'right'});
 
-scrollRevealHandler('.feedback--container', {...scrollRevealConfig, origin:'bottom'});
+scrollRevealHandler('.feedback--container', {...scrollRevealConfig, origin:'left'});
