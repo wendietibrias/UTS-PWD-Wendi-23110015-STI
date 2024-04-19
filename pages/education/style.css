@@ -1,0 +1,166 @@
+@import "../../styles/core.css";
+
+.main--container {
+    padding:6rem 0;
+    max-width:1050px;
+    margin:0 auto;
+}
+
+.university--information-container {
+    padding:0 0 3rem;
+}
+
+.dark .university--information-container h3 {
+    color:var(--white-clr);
+}
+
+.university--background {
+    background-image: url(https://itbss.ac.id/wp-content/uploads/2023/09/IMG_7818-1-scaled.jpg);
+    background-size:cover;
+    background-position:top;
+    background-attachment: fixed;
+    width:100%;
+    height:550px;
+    border-radius:12px;
+    margin:1.5rem 0 1.5rem;
+}
+
+.university--information-container h2 {
+    margin:1rem 0 0;
+}
+
+.university--history p{
+   margin:1rem 0;
+}
+
+.dark .university--history p {
+    color:var(--white-clr);
+}
+
+.dark .university--programs h3 {
+    color:var(--white-clr);
+}
+
+.university--programs-items{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:1rem;
+    margin:2rem 0 0;
+}
+
+.university--programs-item {
+    width:100%;
+    box-shadow: inset 0 0 0.5px 1px hsla(0, 0%, 100%, 0.1),
+    /* 2. shadow ring 👇 */
+    0 0 0 1px hsla(230, 13%, 9%, 0.075),
+    /* 3. multiple soft shadows 👇 */
+    0 0.3px 0.4px hsla(230, 13%, 9%, 0.02),
+    0 0.9px 1.5px hsla(230, 13%, 9%, 0.045),
+    0 3.5px 6px hsla(230, 13%, 9%, 0.09);
+    background-color: var(--white-clr);
+    padding:1.5rem;
+    border-radius:6px;
+    border-top:solid 4px var(--primary-clr);
+}
+
+
+.university--programs-item h3 {
+    font-size:1rem;
+    margin:1rem 0 0.3rem;
+}
+
+.dark .university--programs-item {
+    background-color: #0c0c0c;;
+}
+
+.university--programs-item button a {
+    color:var(--primary-clr);
+    font-weight:600;
+}
+
+.university--programs-item i{
+    font-size:2rem;
+    color:var(--primary-clr);
+}
+
+.university--lecturers {
+    padding:3rem 0 0;
+}
+
+.dark .university--lecturers h3 {
+    color:var(--white-clr);
+}
+
+.university--lecturers-items {
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:1rem;
+    margin:2rem 0 0;
+}
+
+.lectuerrs-item {
+    position:relative;
+    overflow:hidden;
+    cursor:pointer;
+}
+
+.lectuerrs-item img {
+    width:100%;
+    position:relative;
+    object-fit:cover;
+}
+
+.lectuerrs-item-info {
+    background-color: rgba(0,0,0,0.5);
+    position:absolute;
+    bottom:-100%;
+    left:0;
+    width:100%;
+    height:100%;
+    padding:1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.3s ease-in;
+}
+
+.lectuerrs-item:hover .lectuerrs-item-info{
+    bottom:0;
+}
+
+.lectuerrs-item-info h3 {
+    font-size:0.85rem;
+    color:var(--white-clr);
+}
+
+@media screen and (max-width:900px) {
+    .main--container {
+        padding:6rem 1.5rem;
+     }
+
+     .university--lecturers-items {
+        grid-template-columns: repeat(2,1fr);
+     }
+
+     .university--programs-items {
+        grid-template-columns: repeat(2,1fr);
+     }
+
+}
+
+@media screen and (max-width:560px) {
+ 
+
+     .university--background {
+         height:400px;
+     }
+
+     .university--programs-items {
+        grid-template-columns: repeat(1,1fr);
+     }
+
+     .university--lecturers-items {
+        grid-template-columns: repeat(1,1fr);
+     }
+}

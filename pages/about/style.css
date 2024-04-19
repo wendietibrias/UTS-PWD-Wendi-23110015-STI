@@ -1,0 +1,80 @@
+@import "../../styles/core.css";
+
+.main--container {
+    width:100%;
+    min-height:100vh;
+}
+
+.about--container {
+    padding:4rem 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position:relative;
+}
+
+.about--container-content {
+    z-index:999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about--container-content h2 {
+    margin-top:1.5rem;
+}
+
+.dark .about--container-content h2 {
+    color:var(--white-clr);
+}
+
+.about--container-content p {
+    margin-top:0.5rem;
+}
+
+.dark .about--container-content p {
+    color:var(--white-clr);
+}
+
+.dark .about--description-container p {
+    color:var(--white-clr);
+}
+
+.about--container img {
+    width:320px;
+}
+
+#wave {
+    width:120vw;
+    top:0;
+    left:0;
+    position:absolute;
+}
+
+.about--description-container {
+    max-width:800px;
+    margin:0 auto;
+    padding:0 0 3rem;
+    text-align: center;
+}
+
+.about--description-container p {
+    line-height:1.5rem;
+    font-size:0.9rem;
+    margin:1rem 0 0;
+}
+
+@media screen and (max-width:900px) {
+    .about--description-container {
+        padding:0 1.5rem 3rem;
+    }
+}
+
+@media screen and (max-width:560px) {
+    #wave {
+        display:none;
+    }
+
+}

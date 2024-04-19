@@ -1,0 +1,93 @@
+@Import "../../styles/core.css";
+
+.main--container {
+    min-height:100vh;
+    padding:6rem 0;
+    max-width:850px;
+    margin:0 auto;
+
+}
+
+.dark .main--container h2 {
+    color:var(--white-clr);
+}
+
+.author--info-item{
+    display:flex;
+    align-items: center;
+    margin:0 0 1rem;
+    column-gap:1rem;
+}
+
+.author--info-item i {
+    font-size:1.6rem;
+    color:var(--primary-clr);
+}
+
+.dark .author--info-item h5 {
+    color:var(--white-clr);
+}
+
+.main--container-content{
+    margin:2rem 0 0;
+    display: flex;
+    align-items: flex-start;
+    column-gap:4rem;
+}
+
+.contact--form{
+    flex:1;
+
+}
+
+.contact--form-container{
+   display: flex;
+   flex-direction: column;   
+   row-gap:1rem;
+}
+
+.form--item {
+    display: flex;
+    row-gap:0.7rem;
+    flex-direction: column;
+}
+
+.form--item label {
+    font-size:0.9rem;
+    font-weight:600;
+}
+
+.dark .form--item label {
+    color:var(--white-clr);
+}
+
+.form--item input,
+.form--item textarea {
+    width:100%;
+    padding:0.8rem 0.8rem;
+    border:solid 1px var(--subtitle-clr);
+    outline:none;
+    border-radius:6px;
+    font-weight:500;
+}
+
+.form--item textarea {
+    height:150px;
+    resize:none;
+}
+
+@media screen and (max-width:560px) {
+     .main--container {
+        padding:6rem 1.5rem;
+        max-width:100%;
+     }
+
+    .main--container-content {
+        flex-direction: column;
+        row-gap:3rem;
+    }
+
+    .contact--form{
+        width:100%;
+    }
+}

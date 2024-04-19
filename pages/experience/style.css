@@ -1,0 +1,111 @@
+@import "../../styles/core.css";
+
+.main--container {
+    min-height:100vh;
+    padding:6rem 0;
+    max-width:1050px;
+    margin:0 auto;
+}
+
+.experiences--items {
+    display: flex;
+    flex-direction: column;
+    row-gap:2rem;
+}
+
+.experience--item {
+    display:flex;
+    align-items:baseline;
+    column-gap:2rem;
+    background-color: #f5f6fa;
+    padding:2rem;
+    border-radius:8px;
+}
+
+.dark .experience--item {
+    background-color: #0c0c0c;
+}
+
+.strip--line {
+    width:60px;
+    height:2px;
+    background-color: var(--black-clr);
+}
+
+.dark .experiences--headline h3 {
+    color:var(--white-clr);
+}
+
+.experiences--headline-job-dateline{
+    display:flex;
+    align-items: center;
+    column-gap:1rem;
+    margin:0.5rem 0 0;
+}
+
+.experiences--headline-job-dateline p {
+    font-size:0.9rem;
+}
+
+.experience--job-desk {
+    margin:1.5rem 0;
+}
+
+.experience--job-desk h3,
+.experience--tech-stack h3 {
+    font-size:1rem;
+    margin:0 0 1rem;
+}
+
+.dark  .experience--job-desk h3,
+.dark .experience--tech-stack h3 {
+    color:var(--white-clr);
+}
+
+.experience--job-desk ul{
+    list-style:none;
+}
+
+.experience--job-desk ul li {
+    font-size:0.85rem;
+    line-height:1.5rem;
+}
+
+.dark .experience--job-desk ul li{
+    color:var(--white-clr);
+}
+
+.experience--tech-stack ul{
+   display:flex;
+   align-items: center;
+   list-style:none;
+   gap:0.8rem;
+   margin:1rem 0 0;
+   flex-wrap:wrap;
+}
+
+.experience--tech-stack ul li button {
+    background-color: var(--primary-clr);
+    color:var(--white-clr);
+    padding:0.5rem 0.7rem;
+    border-radius:100px;
+    font-size:0.8rem;
+}
+
+@media screen and (max-width:900px) {
+    .main--container {
+        padding:6rem 1.5rem;
+     }
+}
+
+@media screen and (max-width:560px) {
+
+
+     .strip--line {
+        display:none;
+     }
+
+    .experience--item {
+        padding:1rem;
+    }
+}
