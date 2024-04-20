@@ -20,8 +20,13 @@ window.addEventListener('DOMContentLoaded' , function() {
 const hamburgerButton = document.getElementById('hamburger-menu');
 const navbarLinks = document.querySelector('.navbar--links');
 
-console.log(hamburgerButton);
 
 hamburgerButton.addEventListener('click' , function() {
      navbarLinks.classList.toggle('active');
+     if(navbarLinks.classList.contains('active')) {
+          hamburgerButton.innerHTML = `<i class="ri-close-fill"></i>`;
+     } else {
+          hamburgerButton.innerHTML = `<i class="ri-menu-3-line"></i>`;
+     }
+     
 });
