@@ -11,3 +11,6 @@ PAGES :
 4. Projects
 5. Experiences
 6. Contacts
+7. Gallery
+
+DEPLOYMENT LINK : https://wendiutspwd.netlify.app
