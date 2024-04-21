@@ -326,6 +326,12 @@
     margin-top:1.5rem;
 }
 
+@media screen and (max-width:1120px) {
+    .hero--media-social {
+        display:none;
+    }
+}
+
 @media screen and (max-width:900px) {
     .hero--container-content {
         max-width:100%;
