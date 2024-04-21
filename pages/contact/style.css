@@ -76,7 +76,7 @@
     resize:none;
 }
 
-@media screen and (max-width:560px) {
+@media screen and (max-width:660px) {
      .main--container {
         padding:6rem 1.5rem;
         max-width:100%;

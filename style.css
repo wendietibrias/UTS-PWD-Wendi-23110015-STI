@@ -384,7 +384,7 @@
 
 }
 
-@media screen and (max-width:560px) {
+@media screen and (max-width:660px) {
     .hero--container-content {
         max-width:100%;
         padding:0 1.5rem;
