@@ -141,12 +141,14 @@
 
 .footer--social-media button i{
    font-size:1.1rem;
+   color:var(--primary-clr);
 }
 
 @media screen and (max-width:860px) {
     .navbar--container {
         width:100%;
         max-width:100%;
+        padding:1.5rem 2rem;
     }
 
    .navbar--content-right {

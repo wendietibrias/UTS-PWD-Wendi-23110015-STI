@@ -2,7 +2,7 @@
 const navbar = document.querySelector('.navbar--container');
 
 window.addEventListener('scroll' , function() {
-     if(this.scrollY > 80) {
+     if(this.scrollY > 50) {
          navbar.classList.add('active');
      } else {
          navbar.classList.remove('active');
@@ -10,7 +10,7 @@ window.addEventListener('scroll' , function() {
 });
 
 window.addEventListener('DOMContentLoaded' , function() {
-     if(this.scrollY < 80) {
+     if(this.scrollY < 50) {
         navbar.classList.remove('active');
      } else {
         navbar.classList.add('active');

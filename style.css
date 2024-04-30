@@ -69,6 +69,7 @@
 
 .hero--media-social button i {
      font-size:1.2rem;
+     color:var(--primary-clr);
 }
 
 .about--container {
